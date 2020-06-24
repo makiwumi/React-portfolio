@@ -17,9 +17,13 @@ const Homepage = () => (
           <a href="mailto:mfakiwumi@gmail.com" target="_blank" rel="noreferrer noopener">
           <FontAwesomeIcon icon="envelope" />
           </a>
-          
+          <a href="https://www.linkedin.com/in/makiwumi/">
           <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          </a>
+          <a href="https://github.com/makiwumi">
           <FontAwesomeIcon icon={['fab', 'github']} />
+          </a>
+         
           </div>
         
         </div>
@@ -79,6 +83,15 @@ const Homepage = () => (
       a.view-more {
         text-transform: uppercase;
         font-size: 16px;
+      }
+
+      .socialicons {
+        padding: 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 50px;
+        
       }
       /* .latest-work {
         text-align: center;
