@@ -6,7 +6,7 @@ const About = () => (
     <div className="about-text">
       <img src="/static/IMG_2621-Edit.jpg" />
       <p>
-        I am a full-stack web developer experienced in HTML, CSS, Bootstrap, Node.js and JavaScript that specializes in front-end web development and applications. In my previous career as a Medical Laboratory Scientist, I worked with laboratory information systems. I was able to team up with programmers to design and improve workflow in the lab. I have enjoyed designing and creating websites since beginning my journey at the Johns Hopkins coding bootcamp. With my background in Art, Photography and my interest in programming, I was recently motivated to turn my passion into a career.  I’m looking forward to optimizing user experience through design with a team where I can grow, create and learn to master these skills.
+        I am a full-stack web developer experienced in HTML, CSS, Bootstrap, Node.js and JavaScript that specializes in front-end web development and applications. In my previous career as a Medical Laboratory Scientist, I worked with laboratory information systems. I was able to team up with programmers to design and improve workflow in the lab. I have enjoyed designing and creating websites since beginning my journey at the Johns Hopkins coding bootcamp. With my background in Art, Photography and my interest in programming, I was recently motivated to turn my passion into a career.  I’m looking forward to optimizing user experience through design, software development and engineering with a team where I can grow, create and learn to master these skills.
       </p>
     </div>
     <style jsx>{`

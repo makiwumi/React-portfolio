@@ -23,7 +23,6 @@ const Homepage = () => (
           <a href="https://github.com/makiwumi">
           <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
-         
           </div>
         
         </div>
@@ -91,8 +90,15 @@ const Homepage = () => (
         flex-wrap: wrap;
         justify-content: space-around;
         font-size: 50px;
-        
+        color: #212121;
       }
+      a{
+        color: black;
+      }
+      a:hover {
+        color: rgb(238, 192, 192);
+      }
+
       /* .latest-work {
         text-align: center;
         padding: 30px 0;

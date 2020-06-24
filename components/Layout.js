@@ -21,6 +21,10 @@ const Layout = props => (
         box-sizing: border-box;
       }
 
+      html{
+        scroll: smooth-scroll;
+      }
+
       body {
         margin: 0;
         font-size: 20px;
