@@ -1,5 +1,10 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import {faLinkedin, fab, faGithub} from '@fortawesome/free-brands-svg-icons';
+library.add(fas, fab, faGithub, faLinkedin);
 
 
 const Homepage = () => (
@@ -8,6 +13,15 @@ const Homepage = () => (
         <div className="hello">
           <h1 className="hi">Hello<span className="dot">.</span></h1>
           <h3 className="subtitle">I'm Marian <span className="slash"> | </span> Full Stack Web Developer</h3>
+          <div className="socialicons">
+          <a href="mailto:mfakiwumi@gmail.com" target="_blank" rel="noreferrer noopener">
+          <FontAwesomeIcon icon="envelope" />
+          </a>
+          
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          <FontAwesomeIcon icon={['fab', 'github']} />
+          </div>
+        
         </div>
       </div>
       {/* <div className="latest-work">
@@ -23,6 +37,7 @@ const Homepage = () => (
 
       @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
       .cover {
         position: relative;
         min-height: 600px;
@@ -31,7 +46,7 @@ const Homepage = () => (
       }
       .hello {
         position: absolute;
-        top: 25%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         /* background: blue; */
