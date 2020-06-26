@@ -1,8 +1,16 @@
 import Layout from '../components/Layout';
+import{AnimatePresence, motion} from 'framer-motion';
 
 const About = () => (
-  <Layout>
-    <h1>About Me</h1>
+  <AnimatePresence>
+    
+    <Layout>
+      <motion.div className="cover"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        exit={{ opacity: 0}}
+      >
+      <h1>About Me</h1>
     <div className="about-text">
       <img src="/static/IMG_2621-Edit.jpg" />
       <p>
@@ -11,7 +19,7 @@ const About = () => (
     </div>
     <style jsx>{`
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
       .about-text {
         color:black;
         text-align:left;
@@ -41,7 +49,11 @@ const About = () => (
     `}
 
     </style>
+      </motion.div>
+      
   </Layout>
+  </AnimatePresence>
+  
 );
 
 export default About;

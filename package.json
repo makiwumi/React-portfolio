@@ -18,6 +18,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "devicon": "^2.2.0",
+    "devicon-react-svg": "^0.2.2",
+    "framer-motion": "^1.11.1",
     "next": "^9.4.4",
     "next-images": "^1.4.0",
     "react": "^16.13.1",

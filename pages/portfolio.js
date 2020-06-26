@@ -1,10 +1,15 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
-
+import{AnimatePresence, motion} from 'framer-motion';
 
 const Portfolio = () => (
-  <Layout>
-    <h1>Portfolio</h1>
+  <AnimatePresence>
+    <Layout>
+      <motion.div className="cover"
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      exit={{ opacity: 0}}>
+      <h1>Portfolio</h1>
     <div className="portfolio">
       <div className="portfolio-list">
         <div className="item">
@@ -57,7 +62,6 @@ const Portfolio = () => (
       .portfolio {
         max-width:1000px;
         margin: 0 auto;
-        
       }
       /* container that holds the list of photos */
       .portfolio-list {
@@ -66,7 +70,6 @@ const Portfolio = () => (
         flex-wrap: wrap;
         justify-content: space-between;
         background:white;
-
       }
       /* spacing around the square */
       .portfolio .item{
@@ -100,7 +103,10 @@ const Portfolio = () => (
     `}
 
     </style>
+      </motion.div>
   </Layout>
+  </AnimatePresence>
+  
 );
 
 export default Portfolio;

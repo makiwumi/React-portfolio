@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import{AnimatePresence, motion} from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -8,8 +9,15 @@ library.add(fas, fab, faGithub, faLinkedin);
 
 
 const Homepage = () => (
-  <Layout>
-      <div className="cover">
+  <AnimatePresence>
+    <Layout>
+
+      
+      <motion.div className="cover"
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1}}
+      exit={{ opacity: 0}}
+      >
         <div className="hello">
           <h1 className="hi">Hello<span className="dot">.</span></h1>
           <h3 className="subtitle">I'm Marian <span className="slash"> | </span> Full Stack Web Developer</h3>
@@ -26,7 +34,7 @@ const Homepage = () => (
           </div>
         
         </div>
-      </div>
+      </motion.div>
       {/* <div className="latest-work">
         <h2>Latest Work</h2>
       
@@ -118,6 +126,8 @@ const Homepage = () => (
       }
     `}</style>
   </Layout>
+  </AnimatePresence>
+  
 );
 
 export default Homepage;
