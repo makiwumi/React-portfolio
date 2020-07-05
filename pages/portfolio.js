@@ -44,8 +44,8 @@ const Portfolio = () => (
           <a href="#">
           <img src="/static/comingpre.png"  />
           </a>
-          <h2>Coming soon</h2>
-          <p></p>
+          <h2>Curbside</h2>
+          <p>An app that makes moving and letting go easier by leaving the things you will like to get rid on the curb while others call dibs and pick it up. Created using MERN stack</p>
         </div>
         <div className="item">
           <a href="#">
