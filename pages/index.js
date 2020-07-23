@@ -32,6 +32,7 @@ const Homepage = () => (
           <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
           </div>
+          <p>Email me @ <a href="mailto:mfakiwumi@gmail.com">mfakiwumi@gmail.com</a></p>
         
         </div>
       </motion.div>
@@ -100,8 +101,14 @@ const Homepage = () => (
         font-size: 50px;
         color: #212121;
       }
+
+      p{
+        font-size:18px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #212121;
+      }
       a{
-        color: black;
+        color: #212121;
       }
       a:hover {
         color: rgb(238, 192, 192);
