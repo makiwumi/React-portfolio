@@ -2,7 +2,7 @@
   "name": "lasttry",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
@@ -17,6 +17,9 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@types/next": "^9.0.0",
+    "@types/react": "^16.9.43",
+    "@zeit/next-typescript": "^1.1.1",
     "devicon": "^2.2.0",
     "devicon-react-svg": "^0.2.2",
     "framer-motion": "^1.11.1",
@@ -29,7 +32,8 @@
     "react-icons": "^3.10.0",
     "react-native": "^0.62.2",
     "react-native-elements": "^2.0.2",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-vector-icons": "^6.6.0",
+    "typescript": "^3.9.7"
   },
   "devDependencies": {
     "raw-loader": "^4.0.1",
