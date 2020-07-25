@@ -17,11 +17,11 @@ const Navbar = () => (
         <a>Portfolio</a>
       </Link>
     </li>
-    //<li>
-      //<Link href="/skills">
-        //<a>Skills</a>
-      //</Link>
-    //</li>
+    <li>
+      <Link href="/skills">
+        <a>Skills</a>
+      </Link>
+    </li>
     <style jsx>{`
 
       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&family=Spinnaker&display=swap');
