@@ -12,6 +12,14 @@ const Portfolio = () => (
       <h1>Portfolio</h1>
     <div className="portfolio">
       <div className="portfolio-list">
+      <div className="item">
+          <a href="https://github.com/KendraNeves/curbside">
+          <img src="/static/Front page.png"  />
+          <h2>Curbside</h2>
+          </a>
+          <p id="p1">Curbside is an application that allows users to get rid of personal items when moving, without the hassel of selling, throwing the items away or even meeting the people who wants to claim the item.</p>
+          <p id="p2">Tools: MongoDB, Express, React.js, Node.js (MERN Stack)</p>
+        </div>
         <div className="item">
           <a href="https://hospitality-1.herokuapp.com/">
           <img src="/static/hosppre.png"  />
@@ -78,17 +86,24 @@ const Portfolio = () => (
         /* background: rgb(238, 192, 192); */
       }
       /* size of square/fonts and margins around img title and description */
-      img, h2, p{
+      img, h2, #p1, #p2 {
         max-width: 200px;
       }
       h2{
         margin: 0 0 5px 0;
         font-family: 'Spinnaker', sans-serif;
+        font-size:30px;
       }
-      p{
+
+      #p1{
         font-family: 'Spinnaker', sans-serif;
         font-size:18px;
         color:#777;
+      }
+      #p2{
+        font-family: 'Spinnaker', sans-serif;
+        font-size:15px;
+        color:#212121;
       }
       /* change the portfolio item width to auto and have that padding when
       the browser window is 600px wide or less */
