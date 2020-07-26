@@ -35,7 +35,7 @@ const Homepage = () => (
           <p>Email me @ <a href="mailto:mfakiwumi@gmail.com">mfakiwumi@gmail.com</a></p>
         
         </div>
-      </motion.div>
+      
       {/* <div className="latest-work">
         <h2>Latest Work</h2>
       
@@ -132,6 +132,7 @@ const Homepage = () => (
         }
       }
     `}</style>
+    </motion.div>
   </Layout>
   </AnimatePresence>
   

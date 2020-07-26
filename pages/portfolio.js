@@ -61,7 +61,7 @@ const Portfolio = () => (
         </div> */}
       </div>
     </div>
-    </motion.div>
+    
     <style jsx>{`
       @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
@@ -127,10 +127,10 @@ const Portfolio = () => (
           padding:10px 20px;
         }
       }
-    `}
+      `}
 
     </style>
-      
+    </motion.div> 
   </Layout>
   </AnimatePresence>
   
