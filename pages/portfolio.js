@@ -98,6 +98,7 @@ const Portfolio = () => (
 
       a{
         color: #212121;
+      }
       
       /* change the portfolio item width to auto and have that padding when
       the browser window is 600px wide or less */
