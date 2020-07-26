@@ -12,66 +12,52 @@ const Portfolio = () => (
       <h1>Portfolio</h1>
     <div className="portfolio">
       <div className="portfolio-list">
-      <div className="item">
-          <a href="https://github.com/KendraNeves/curbside">
-          <img src="/static/Front page.png"  />
-          <h2>Curbside</h2>
-          </a>
-          <p id="p1">Curbside is an application that allows users to get rid of personal items when moving, without the hassel of selling, throwing the items away or even meeting the people who wants to claim the item.</p>
-          <p id="p2">Tools: MongoDB, Express, React.js, Node.js (MERN Stack)</p>
-        </div>
         <div className="item">
           <a href="https://hospitality-1.herokuapp.com/">
           <img src="/static/hosppre.png"  />
-          <h2>Hospitality</h2>
           </a>
-          <p id="p1">Hospitality is a healthcare portal for medical professionals to add, store and update patient records in a simple way. It is also tracks current treats such as the Corona virus.</p>
-          <p id="p2">Tools: HTML, JavaScript, CSS, Nodejs, Express, MySQL</p>
+          <h2>Hospitality</h2>
+          <p>Hospitality is a healthcare portal for medical professionals to add, store and update patient records in a simple way. It is also tracks current treats such as the Corona virus.</p>
         </div>
         <div className="item">
           <a href="https://makiwumi.github.io/Weather-Dashboard/">
           <img src="/static/weatherpre.png"  />
-          <h2>Weather Dashboard</h2>
           </a>
-          <p id="p1">A dashboard that displays the weather in each city searched for.</p>
-          <p id="p2">Tools: HTML, CSS, JavaScript, Bootstrap and OpenWeather API</p>
+          <h2>Weather Dashboard</h2>
+          <p>A dashboard that displays the weather from an API using HTML, CSS, JavaScript and Bootstrap.</p>
         </div>
         <div className="item">
           <a href="https://burger-galore.herokuapp.com/">
           <img src="/static/Eatpre.png"  />
-          <h2>Eat-Da-Burger</h2>
           </a>
-          <p id="p1">An app that allows you to add your favorite burgers and devour them!</p>
-          <p id="p2">Tools: Handlebars, CSS, Nodejs, Express, MySQL</p>
+          <h2>Eat-Da-Burger</h2>
+          <p>An app that allows you to add your favorite burgers and devour them!</p>
         </div>
         <div className="item">
           <a href="https://makiwumi.github.io/Employee-Directory/">
           <img src="/static/emppre.png"  />
-          <h2>Employee Directory</h2>
           </a>
-          <p id="p1">An app that displays a list of employees by name, phone number and email.</p>
-          <p id="p2">Tools: React.js, Node.js, Express, RandomUser API</p>
+          <h2>Employee Directory</h2>
+          <p>An app that displays a list of employees by name, phone number and email.</p>
         </div>
-        {/* <div className="item">
+        <div className="item">
+          <a href="#">
+          <img src="/static/comingpre.png"  />
+          </a>
+          <h2>Curbside</h2>
+          <p>An app that makes moving and letting go easier by leaving the things you will like to get rid on the curb while others call dibs and pick it up. Created using MERN stack</p>
+        </div>
+        <div className="item">
           <a href="#">
           <img src="/static/comingpre.png"  />
           </a>
           <h2>Coming Soon</h2>
           <p></p>
-        </div> */}
+        </div>
       </div>
     </div>
-    
     <style jsx>{`
-      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
-      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
-      .cover {
-        position: relative;
-        min-height: 600px;
-        /* background: url(/static/seamless-doodle-transp.jpg);
-        background-size: cover; */
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&family=Spinnaker&display=swap');
       /* background that holds the page */
       .portfolio {
         max-width:1000px;
@@ -92,33 +78,18 @@ const Portfolio = () => (
         /* background: rgb(238, 192, 192); */
       }
       /* size of square/fonts and margins around img title and description */
-      img, h2, #p1, #p2 {
+      img, h2, p{
         max-width: 200px;
       }
       h2{
         margin: 0 0 5px 0;
         font-family: 'Spinnaker', sans-serif;
-        font-size:30px;
       }
-
-      #p1{
+      p{
         font-family: 'Spinnaker', sans-serif;
         font-size:18px;
         color:#777;
       }
-      #p2{
-        font-family: 'Spinnaker', sans-serif;
-        font-size:15px;
-        color:#212121;
-      }
-
-      a{
-        color: #212121;
-      }
-      a:hover {
-        color: rgb(238, 192, 192);
-      }
-
       /* change the portfolio item width to auto and have that padding when
       the browser window is 600px wide or less */
       @media (max-width: 600px) {
@@ -127,10 +98,10 @@ const Portfolio = () => (
           padding:10px 20px;
         }
       }
-      `}
+    `}
 
     </style>
-    </motion.div> 
+      </motion.div>
   </Layout>
   </AnimatePresence>
   
