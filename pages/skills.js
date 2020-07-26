@@ -1,6 +1,11 @@
 import Layout from '../components/Layout';
 import{AnimatePresence, motion} from 'framer-motion';
-import { MDBIcon } from "mdbreact";
+// import { MDBIcon } from "mdbreact";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import {faLinkedin, fab, faGithub} from '@fortawesome/free-brands-svg-icons';
+library.add(fas, fab, faGithub, faLinkedin);
 // import DevIcon from "devicon-react-svg";
 
 const devIconStyle = {
@@ -18,15 +23,15 @@ const Skills = () => (
       <div className="lang">
       
       <div className="icons">
-        <MDBIcon fab icon="html5" style={devIconStyle} />
-        <MDBIcon fab icon="css3-alt" style={devIconStyle} />
-        <MDBIcon fab icon="js-square" style={devIconStyle}/>
-        <MDBIcon fab icon="react" style={devIconStyle}/>
-        <MDBIcon fab icon="bootstrap" style={devIconStyle}/>
-        <MDBIcon fab icon="github" style={devIconStyle}/>
-        <MDBIcon fab icon="adobe" style={devIconStyle}/>
-        <MDBIcon fab icon="git-alt" style={devIconStyle}/>
-        <MDBIcon fab icon="node" style={devIconStyle}/>
+        <FontAwesomeIcon icon={["fab","html5"]} style={devIconStyle} />
+        {/* <FontAwesomeIcon fab icon="css3-alt" style={devIconStyle} />
+        <FontAwesomeIcon fab icon="js-square" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="react" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="bootstrap" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="github" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="adobe" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="git-alt" style={devIconStyle}/>
+        <FontAwesomeIcon fab icon="node" style={devIconStyle}/> */}
         
         {/* <DevIcon icon="html5" style={devIconStyle}/>
         <DevIcon icon="css3" style={devIconStyle}/>
@@ -53,6 +58,7 @@ const Skills = () => (
     <style jsx>{`
       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
       @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
+      
       /* .cover {
         position: relative;
         min-height: 600px;
