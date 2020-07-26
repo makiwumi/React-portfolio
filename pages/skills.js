@@ -51,15 +51,14 @@ const Skills = () => (
         
       
     <style jsx>{`
-      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Caveat&family=Homemade+Apple&family=Press+Start+2P&family=Sacramento&family=Satisfy&display=swap');
       @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css');
-      .cover {
+      /* .cover {
         position: relative;
         min-height: 600px;
-        /* background: url(/static/seamless-doodle-transp.jpg);
-        background-size: cover; */
-      }
+        background: url(/static/seamless-doodle-transp.jpg);
+        background-size: cover;
+      } */
       .lang {
         color:black;
         text-align:left;
