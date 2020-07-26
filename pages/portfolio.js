@@ -98,10 +98,7 @@ const Portfolio = () => (
 
       a{
         color: #212121;
-      }
-      a:hover {
-        color: rgb(238, 192, 192);
-      }
+      
       /* change the portfolio item width to auto and have that padding when
       the browser window is 600px wide or less */
       @media (max-width: 600px) {
