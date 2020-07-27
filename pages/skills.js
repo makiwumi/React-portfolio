@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
 import{AnimatePresence, motion} from 'framer-motion';
-// import { MDBIcon } from "mdbreact";
+import { MDBIcon } from "mdbreact";
 // import DevIcon from "devicon-react-svg";
 
 const devIconStyle = {
-  width: "100px",
+  width: "120px",
 };
 
 const Services = () => (
@@ -18,15 +18,15 @@ const Services = () => (
       <div className="lang">
       
       <div className="icons">
-        {/* <MDBIcon fab icon="html5" />
-        <MDBIcon fab icon="css3-alt" />
-        <MDBIcon fab icon="js-square" />
-        <MDBIcon fab icon="react" />
-        <MDBIcon fab icon="bootstrap" />
-        <MDBIcon fab icon="node" />
-        <MDBIcon fab icon="git-alt" />
-        <MDBIcon fab icon="github" />
-        <MDBIcon fab icon="adobe" /> */}
+        <MDBIcon fab icon="html5" style={devIconStyle} />
+        <MDBIcon fab icon="css3-alt" style={devIconStyle} />
+        <MDBIcon fab icon="js-square" style={devIconStyle}/>
+        <MDBIcon fab icon="react" style={devIconStyle}/>
+        <MDBIcon fab icon="bootstrap" style={devIconStyle}/>
+        <MDBIcon fab icon="github" style={devIconStyle}/>
+        <MDBIcon fab icon="adobe" style={devIconStyle}/>
+        <MDBIcon fab icon="git-alt" style={devIconStyle}/>
+        <MDBIcon fab icon="node" style={devIconStyle}/>
       
         {/* <DevIcon icon="html5" style={devIconStyle}/>
         <DevIcon icon="css3" style={devIconStyle}/>
@@ -72,6 +72,7 @@ const Services = () => (
         padding: 50px;
         margin-bottom: 40px;
         justify-content: space-between;
+        font-size:100px;
       }
       
     
